@@ -35,8 +35,8 @@ Inference Time: 33.37ms → 37.74ms (NVIDIA GeForce RTX 3050)
 
 Installation
 
+git clone https://github.com/nhatcn/YOLO-LOAMDPMS-Learnable-Occlusion-Aware-and-Depth-Point-wise-Multi-Scale-Channel-Attention.git
 
-git clone https://github.com/yourusername/YOLO-LOAMDPMS.git
 cd YOLO-LOAMDPMS
 
 Training
