@@ -38,5 +38,17 @@ Installation
 git clone https://github.com/yourusername/YOLO-LOAMDPMS.git
 cd YOLO-LOAMDPMS
 
-# Install dependencies
-pip install -r requirements.txt
+Training
+Train with Combined LOAM + DPMS
+
+python start_train.py 
+  --model ultralytics/cfg/models/v8/yolov8m_LOAM_DPMS.yaml 
+  --data_dir /path/to/your/data.yaml
+
+Train with DPMS Only
+
+python start_train.py \
+  --model ultralytics/cfg/models/v8/yolov8m_DPMS.yaml \
+  --data_dir /path/to/your/data.yaml
+
+....
