@@ -43,7 +43,7 @@ Training
 Train with Combined LOAM + DPMS
 
 python start_train.py 
-  --model ultralytics/cfg/models/v8/yolov8m_LOAM_DPMS.yaml 
+  --model ultralytics/cfg/models/v8/yolov8m_LOAMandDPMS.yaml 
   --data_dir /path/to/your/data.yaml
 
 Train with DPMS Only
