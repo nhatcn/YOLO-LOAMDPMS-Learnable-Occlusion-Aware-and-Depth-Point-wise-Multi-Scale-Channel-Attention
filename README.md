@@ -1,4 +1,5 @@
 YOLO-LOAMDPMS: Learnable Occlusion-Aware and Depth Point-wise Multi-Scale Channel Attention for Object Detection
+
 Official implementation of "YOLO-LOAMDPMS: Learnable Occlusion-Aware and Depth Point-wise Multi-Scale Channel Attention for Object Detection"
 Overview
 This repository presents an enhanced YOLOv8m architecture that addresses robust object detection under challenging conditions including occlusion, scale variation, and adverse weather (rain, fog, snow, sand). The method integrates two lightweight attention modules:
