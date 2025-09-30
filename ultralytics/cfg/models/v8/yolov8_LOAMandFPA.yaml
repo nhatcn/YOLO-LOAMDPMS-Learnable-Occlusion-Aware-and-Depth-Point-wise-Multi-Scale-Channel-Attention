@@ -29,7 +29,7 @@ backbone:
   - [-1, 1, Conv, [1024, 3, 2]] # 10-P5/32, in=512, out=1024
   - [-1, 3, C2f, [1024, True]]  # 11, in=1024, out=1024
   - [-1, 1, LOAMBlock, [1024, 1024]]  # 12: LOAM, in=1024, out=1024
-  - [-1, 1, FPAAttention, [1024, 1024]]  # 13: FPAAttention, in=1024, out=1024
+  - [-1, 1, DPMS, [1024, 1024]]  # 13: DPMS, in=1024, out=1024
 
 # YOLOv8 head
 head:

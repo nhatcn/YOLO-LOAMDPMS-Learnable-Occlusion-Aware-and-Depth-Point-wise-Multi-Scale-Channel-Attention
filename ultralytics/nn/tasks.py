@@ -92,11 +92,11 @@ from ultralytics.utils.torch_utils import (
 )
 
 # ==== BỔ SUNG ==== #
-# Import LOAMBlock và FPAAttention từ attention.py
-from ultralytics.nn.modules.attention import LOAMBlock, FPAAttention
+# Import LOAMBlock và DPMS từ attention.py
+from ultralytics.nn.modules.attention import LOAMBlock, DPMS
 
-# Cập nhật globals() để parse_model nhận diện LOAMBlock và FPAAttention
-globals().update({"LOAMBlock": LOAMBlock, "FPAAttention": FPAAttention})
+# Cập nhật globals() để parse_model nhận diện LOAMBlock và DPMS
+globals().update({"LOAMBlock": LOAMBlock, "DPMS": DPMS})
 
 class BaseModel(torch.nn.Module):
     """The BaseModel class serves as a base class for all the models in the Ultralytics YOLO family."""
@@ -1268,7 +1268,7 @@ def parse_model(d, ch, verbose=True):
             C2fCIB,
             A2C2f,
             LOAMBlock,  # Thêm LOAMBlock
-            FPAAttention,  # Thêm FPAAttention
+            DPMS,  # Thêm DPMS
         }
     )
     repeat_modules = frozenset(
@@ -1288,7 +1288,7 @@ def parse_model(d, ch, verbose=True):
             C2fCIB,
             C2PSA,
             A2C2f,
-            # LOAMBlock và FPAAttention không cần lặp lại nhiều lần
+            # LOAMBlock và DPMS không cần lặp lại nhiều lần
         }
     )
 

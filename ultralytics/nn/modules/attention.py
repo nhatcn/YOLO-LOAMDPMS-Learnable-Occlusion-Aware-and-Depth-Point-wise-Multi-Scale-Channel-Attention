@@ -29,8 +29,7 @@ class LOAMBlock(nn.Module):
         out = torch.cat([out, enhanced], dim=1)
         return self.proj(out)
 
-# ========== Feature Pyramid Attention (FPA) ==========
-class FPAAttention(nn.Module):
+class DPMS(nn.Module):
     def __init__(self, c1, c2, n=1, shortcut=False, **kwargs):
         super().__init__()
         self.conv1 = nn.Conv2d(c1, c1, kernel_size=1)
@@ -48,7 +47,7 @@ class FPAAttention(nn.Module):
             nn.Conv2d(c2 // 16, c2, kernel_size=1),
             nn.Sigmoid()
         )
-        # 👇 Thêm để tránh lỗi khi load mô hình cũ
+
         self.spatial_attention = nn.Identity()
 
     def forward(self, x):
