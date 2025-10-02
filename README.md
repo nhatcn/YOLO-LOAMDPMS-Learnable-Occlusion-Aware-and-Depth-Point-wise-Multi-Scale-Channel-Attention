@@ -1,4 +1,4 @@
-YOLO-LOAMDPMS: Learnable Occlusion-Aware and Depth Point-wise Multi-Scale Channel Attention for Object Detection
+**YOLO-LOAMDPMS: Learnable Occlusion-Aware and Depth Point-wise Multi-Scale Channel Attention for Object Detection**
 
 Official implementation of "YOLO-LOAMDPMS: Learnable Occlusion-Aware and Depth Point-wise Multi-Scale Channel Attention for Object Detection"
 Overview
@@ -41,15 +41,15 @@ cd YOLO-LOAMDPMS
 
 Training
 Train with Combined LOAM + DPMS
-
+```bash
 python start_train.py 
   --model ultralytics/cfg/models/v8/yolov8m_LOAMandDPMS.yaml 
   --data_dir /path/to/your/data.yaml
-
+```
 Train with DPMS Only
-
+```bash
 python start_train.py \
   --model ultralytics/cfg/models/v8/yolov8m_DPMS.yaml \
   --data_dir /path/to/your/data.yaml
-
+```
 ....
