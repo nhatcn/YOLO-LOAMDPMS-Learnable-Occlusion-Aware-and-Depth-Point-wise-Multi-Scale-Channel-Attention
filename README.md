@@ -1,4 +1,4 @@
-**YOLO-LOAMDPMS: Learnable Occlusion-Aware and Depth Point-wise Multi-Scale Channel Attention for Object Detection**
+## **YOLO-LOAMDPMS: Learnable Occlusion-Aware and Depth Point-wise Multi-Scale Channel Attention for Object Detection**
 
 Official implementation of "YOLO-LOAMDPMS: Learnable Occlusion-Aware and Depth Point-wise Multi-Scale Channel Attention for Object Detection"
 Overview
