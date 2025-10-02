@@ -33,11 +33,15 @@ FLOPs: 79.1G → 96.0G
 Inference Time: 33.37ms → 37.74ms (NVIDIA GeForce RTX 3050)
 
 
-Installation
-
+## ⚙️ Installation
+```bash
 git clone https://github.com/nhatcn/YOLO-LOAMDPMS-Learnable-Occlusion-Aware-and-Depth-Point-wise-Multi-Scale-Channel-Attention.git
 
-cd YOLO-LOAMDPMS
+cd YOLO-LOAMDPMS-Learnable-Occlusion-Aware-and-Depth-Point-wise-Multi-Scale-Channel-Attention
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 opencv-python numpy matplotlib scipy pandas tqdm pyyaml polars ultralytics==8.3.140
+
+```
 
 Training
 Train with Combined LOAM + DPMS
